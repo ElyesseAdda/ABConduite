@@ -3,6 +3,7 @@ body{
     font-family: 'Inter', sans-serif; 
     background-color: #E6E6E6;  
 }
+
 .navbar{
     background-color: #384654;
     border-radius: 20px;
@@ -147,6 +148,7 @@ body{
 .footer {
     height: fit-content;
     background-color: #384654;
+    border-radius: 20px;
 }
 .footer h2 {
     text-align: center;
@@ -160,16 +162,18 @@ body{
     text-align: center;
     color: #fff;
 }
-.logo-reseau {
-    display: grid;
-    grid-template-columns: repeat(3, 20%);
-    grid-auto-rows: 50px;
-    align-content: space-evenly;
-    align-items: center;
-} 
-
-.logo-reseau img {
-    scale: 0.1;
-    padding: 0;
-    margin: 0;
+.logo-reseau img{
+    height: 30px;
+    
 }
+.logo {
+    position: relative;
+    align-items: center;
+    height: 70px;
+    margin: auto;
+}
+.logo-reseau{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
