@@ -3,6 +3,18 @@ body{
     font-family: 'Inter', sans-serif; 
     background-color: #E6E6E6;  
 }
+.white{
+    color: #fff;
+}
+.orange{
+    color: #F56155;
+}
+.black{
+    color: black;
+}
+.darkgrey{
+    color: #384654;
+}
 
 .navbar{
     background-color: #384654;
@@ -41,6 +53,7 @@ body{
     border-radius: 20px;
     margin: auto;
     width: 50vw;
+    max-width: 276px;
     padding: 5px  
 }
 .p4x {
@@ -93,6 +106,7 @@ body{
     text-align: center;
     color: #fff;
     padding-top: 50px;
+    max-width: 250px;
 }
 .formation-a{
     margin-top: 15px;
@@ -133,17 +147,50 @@ body{
    text-decoration: none;
 }
 .avis {
-    height: 20vh;
+    margin-top: 20px;
+    height: 25vh;
     text-align: center;
 }
-.avis h2 {
-    margin-bottom: 2px;
+.avis .color {
+    margin-bottom: 100px;
+    font-weight: 600;
 }
-.avis span{
-    display: block;
-    border-top: 3px solid #F56155;
-    width: 80%;
-    margin: auto;  
+
+.borderavis{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.avis-text {
+   position: absolute;
+   width: 300px;
+   margin-top: 20px;
+   margin-left: 20px;
+}
+.border-left .fa-solid{
+    color: #F56155;
+}
+.border-right .fa-solid{
+    color: #F56155;
+    margin-top: 70%;
+}
+.border-right{
+    position: relative;
+    width: 50%;
+    height: 150px;
+    border-right: #384654 solid 5px;
+    border-bottom: #384654 solid 5px;
+    margin-right: 20px;
+    max-width: 300px;
+}
+.border-left{
+    position: relative;
+    width: 50%;
+    height: 150px;
+    border-left: #F56155 solid 5px;
+    border-top: #F56155 solid 5px;
+    margin-left: 20px;
+    max-width: 300px;
 }
 .footer {
     height: fit-content;
@@ -175,5 +222,6 @@ body{
 .logo-reseau{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
 }
 
