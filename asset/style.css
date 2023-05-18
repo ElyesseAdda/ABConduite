@@ -1,8 +1,9 @@
 body{
     margin: 0;
     font-family: 'Inter', sans-serif; 
-    background-color: #E6E6E6;  
+    background-color: #E6E6E6;
 }
+/* Couleur Text */
 .white{
     color: #fff;
 }
@@ -15,24 +16,61 @@ body{
 .darkgrey{
     color: #384654;
 }
-
+/* NavbarMobile */
 .navbar{
     background-color: #384654;
     border-radius: 20px;
     height: 40vh;
 
 }
-.hamb-menu{
-    scale: 0.2;
+.hamb-menu img{
+    height: 60px;
+    max-height: 60px;
+    max-width: 60px;
+    position: relative;
+    left: 80%;
+}
+.fa-xmark{
+    position: relative;
+    color: #384654;
+    scale: 3;
+    top: -50px;
+    left: 150px;
+}
+
+.nav-mobile{
+    transition: 1s;
+    max-width: 390px;
+    z-index: 1;
     position: absolute;
-    top: -90px;
-    left: 220px;
+    top: -10px;
+    left: -100%;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    color: #384654;
+    background-color: #F56155;
+    padding-top: 91px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+}
+.nav-mobile li {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: -20px ;
+    font-size: x-large;
+    font-weight: 600;
+    color: #384654;
+    
+}
+.nav-mobile a {
+    text-decoration: none;
 }
 .navbar h1{
     background-color: #384654;
     text-align: center;
     margin-top: 0;
-    padding-top: 8vh;
+    padding-top: 2vh;
     color:#fff;
     text-decoration: underline #F56155 5px;
     text-underline-offset: 10px;
@@ -56,6 +94,8 @@ body{
     max-width: 276px;
     padding: 5px  
 }
+/* Début accueil */
+/* Paiment 4x sans frais  */
 .p4x {
     background-color: #fff;
     padding-top: 15px;
@@ -85,6 +125,7 @@ body{
 .formation{
     background-color: #E6E6E6;
     padding-top: 2px 0px;
+    overflow: hidden;
 }
 .formation h2{
     margin-top: 2vh;
@@ -97,7 +138,15 @@ body{
     color: rgba(0, 0, 0, 0.68);
     font-weight: 600;
 }
-.formation-slider p {
+.slider-forfait{
+    transition: 300ms;
+    display: flex;
+    gap: 30px;
+    max-width: 390px;
+    position: relative;
+
+}
+.case-slider p {
     background-color: #F56155;
     width: 60vw;
     height: 10vh;
@@ -107,6 +156,7 @@ body{
     color: #fff;
     padding-top: 50px;
     max-width: 250px;
+    
 }
 .formation-a{
     margin-top: 15px;
@@ -124,7 +174,7 @@ body{
     background-color: #384654;
     border-radius: 20px;
     height: 30vh;
-    margin-top: 0;
+    margin-top: 30px;
 }
 .news h2{
     color: #fff;
@@ -193,6 +243,8 @@ body{
     margin-left: 20px;
     max-width: 300px;
 }
+/* Fin accueil */
+/* FooterMobile */
 .footer {
     height: fit-content;
     background-color: #384654;
@@ -225,4 +277,4 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 100%;
 }
-
+/* Fin footerMobile */
