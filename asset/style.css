@@ -25,7 +25,8 @@ body{
 /* NavbarMobile */
 .navbar{
     background-color: #384654;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     height: 40vh;
 }
 .PC{
@@ -63,7 +64,8 @@ body{
     background-color: #F56155;
     padding-top: 91px;
     padding-bottom: 60px;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .nav-mobile li {
     margin-top: 20px;
@@ -272,7 +274,8 @@ body{
 .footer {
     height: fit-content;
     background-color: #384654;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .footer h2 {
     text-align: center;
@@ -325,8 +328,8 @@ body{
     }
     .navbar{
         height: 40px;
-        padding-left: 90px;
-        padding-right: 90px;
+        padding-left: 20px;
+        padding-right: 20px;
         display: flex;
         gap: 70px;
        
@@ -385,7 +388,7 @@ body{
         gap: 1vw;
     }
     .header {
-        margin: 0 90px;
+        margin: 0 200px;
         margin-bottom: 20px;
         background-color: #ffffff;
         display: grid;
@@ -400,6 +403,7 @@ body{
         position: relative;
         width: 100%;
         border-radius: 20px;
+        min-width: 380px;
     }
     .header-text{
         padding-right: 20px;
@@ -415,9 +419,8 @@ body{
     .header-text p {
         color: #1D2424;
         font-style: italic;
-        padding: 30px;
-        margin: auto;
-        font-size: 1.5rem;
+        padding-bottom: 30px;
+        font-size: 1.2rem;
         margin-bottom: 20px;
     }
     .logoAB{
@@ -437,7 +440,7 @@ body{
         margin: auto;
     }
     .p4x{
-        margin: 0 90px;
+        margin: 0 200px;
         padding: 50px 0px;
         height: fit-content;
         background-color: #384654;
@@ -445,13 +448,13 @@ body{
     }
     .p4x h2{
         margin: auto;
-        font-size: 3vw;
+        font-size: 2vw;
         padding-bottom: 20px;
     }
     .p4x p{
         font-style: italic;
         color: #ffffffdb;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .p4x-a{
         font-size: 1.5rem;
@@ -478,6 +481,6 @@ body{
     margin: auto;
     }
     .news {
-        margin: 0 90px;
+        margin: 0 200px;
     }
 }
