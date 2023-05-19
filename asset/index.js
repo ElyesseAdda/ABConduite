@@ -6,11 +6,11 @@ basePosition = 0
 
 
   const slider = () => {  setTimeout(() =>{
-        if( basePosition < 900)
+        if( basePosition < 1500)
         {basePosition = basePosition +5
         sliderPosition.style.right = basePosition +"px"
         console.log(basePosition);}
-        else if (basePosition >= 900){ 
+        else if (basePosition >= 1500){ 
             basePosition = 0
         }
 

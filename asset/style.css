@@ -1,9 +1,15 @@
 body{
     margin: 0;
     font-family: 'Inter', sans-serif; 
-    background-color: #E6E6E6;
+    background-color: #ffffff;
 }
+/* *{
+    border: #F56155 solid 3px;
+} */
 /* Couleur Text */
+.one{
+    background-color: #384654;
+}
 .white{
     color: #fff;
 }
@@ -21,7 +27,12 @@ body{
     background-color: #384654;
     border-radius: 20px;
     height: 40vh;
-
+}
+.PC{
+    display: none;
+}
+.navbarPC{
+    display: none;
 }
 .hamb-menu img{
     height: 60px;
@@ -40,7 +51,7 @@ body{
 
 .nav-mobile{
     transition: 1s;
-    max-width: 390px;
+    max-width: 100%;
     z-index: 1;
     position: absolute;
     top: -10px;
@@ -95,14 +106,19 @@ body{
     padding: 5px  
 }
 /* Début accueil */
+.header {
+    display: none;
+}
 /* Paiment 4x sans frais  */
 .p4x {
     background-color: #fff;
     padding-top: 15px;
     padding-bottom: 20px;
 }
+.p4x-a{
+    text-align: center;
+}
 .p4x h2{
-    font: 800;
     margin: 5%;
     text-align: center;
     font-weight: bolder;
@@ -115,12 +131,14 @@ body{
     font-weight: bold; 
 }
 .p4x a{
+
+   text-align: center;
    margin: auto 25%;
    color: #F56155;
    font-style: italic;
    text-decoration: none;
-   
 }
+
 
 .formation{
     background-color: #E6E6E6;
@@ -147,23 +165,23 @@ body{
 
 }
 .case-slider p {
-    background-color: #F56155;
     width: 60vw;
     height: 10vh;
     border-radius: 20px;
     margin: 0px 15%;
     text-align: center;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 65px;
     max-width: 250px;
     
 }
 .formation-a{
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
 }
 .formation a{
-    margin: auto 25%;
+    margin: auto;
     color: #F56155;
     font-style: italic;
     text-decoration: none;
@@ -174,7 +192,9 @@ body{
     background-color: #384654;
     border-radius: 20px;
     height: 30vh;
-    margin-top: 30px;
+}
+.news-a{
+    text-align: center;
 }
 .news h2{
     color: #fff;
@@ -197,9 +217,12 @@ body{
    text-decoration: none;
 }
 .avis {
+    margin: auto;
     margin-top: 20px;
     height: 25vh;
     text-align: center;
+    max-width: 390px;
+    align-items: center;
 }
 .avis .color {
     margin-bottom: 100px;
@@ -208,6 +231,7 @@ body{
 }
 
 .borderavis{
+    /* margin-left: 16%; */
     margin-top: 20px;
     display: flex;
     
@@ -223,7 +247,7 @@ body{
 }
 .border-right .fa-solid{
     color: #F56155;
-    margin-top: 70%;
+    margin-top: 13vh;
 }
 .border-right{
     position: relative;
@@ -277,4 +301,183 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 100%;
 }
+.lienutile{
+    display: none;
+}
 /* Fin footerMobile */
+
+/* Début écran pc */
+@media (min-width: 1050Px) {
+    .PC{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+    /* Navbar PC */
+    .navbarPC{
+        position: relative;
+        margin: auto;
+        display: flex;
+        height: 40px;
+        display: flex;
+        gap: 7vw;
+    }
+    .navbar{
+        height: 40px;
+        padding-left: 90px;
+        padding-right: 90px;
+        display: flex;
+        gap: 70px;
+       
+    }
+    .navbar a {
+        visibility: visible;
+        margin: auto;
+        text-decoration: none;
+        color: #E6E6E6; 
+    }
+     a:hover {
+        color: #F56155;
+    }
+    .hamb-menu{
+        display: none;
+    }
+    .navbar h1{
+        visibility: hidden;
+    }
+    .logo-reseaupc{
+        max-height: 30px;
+    }
+    .logopc{
+        height: 30px;
+    }
+    .btn-devis{
+        background-color: #F56155;
+        border-radius: 20px;
+        width: 200px;
+        text-align: center;
+        height: 25px;
+        padding-top: 5px;
+    }
+    .hamb-menu {
+        visibility: hidden;
+    }
+    
+    /* FooterPC */
+    .footer{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        gap: 20vw;
+        font-size: 1.5vw;
+        padding-bottom: 20px;
+    }
+    .lienutile{
+        display: block;
+    }
+    .lienutile a{
+        text-decoration: none;
+        color: #E6E6E6;
+    }
+    .logo-reseau{
+        padding-top: 15px;
+        gap: 1vw;
+    }
+    .header {
+        margin: 0 90px;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+        gap: 20px;
+    }
+    .imgAb{
+        margin: 4vw;
+    }
+    .imgAB{
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .header-text{
+        padding-right: 20px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        top: -10vw;
+    }
+    .header-text a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .header-text p {
+        color: #1D2424;
+        font-style: italic;
+        padding: 30px;
+        margin: auto;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .logoAB{
+        position: relative;
+        height: 10vW; 
+    }
+
+    .btn-contact{
+        color: #fff;
+        font-size: x-large;
+        background-color: #F56155;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        height: 50px;
+        padding-top: 25px;
+        margin: auto;
+    }
+    .p4x{
+        margin: 0 90px;
+        padding: 50px 0px;
+        height: fit-content;
+        background-color: #384654;
+        border-radius: 20px;
+    }
+    .p4x h2{
+        margin: auto;
+        font-size: 3vw;
+        padding-bottom: 20px;
+    }
+    .p4x p{
+        font-style: italic;
+        color: #ffffffdb;
+        font-size: 1.5rem;
+    }
+    .p4x-a{
+        font-size: 1.5rem;
+    }
+    .formation{
+        background-color: #ffffff;
+    }
+    .formation-title{
+        margin: 30px;
+    }
+    .formation a{
+        text-align: center;
+        color: white;
+    }
+    .formation span {
+    color: #fff;
+    font-size: x-large;
+    background-color: #F56155;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    height: 50px;
+    padding-top: 25px;
+    margin: auto;
+    }
+    .news {
+        margin: 0 90px;
+    }
+}
