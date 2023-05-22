@@ -27,11 +27,10 @@ body{
     background-color: #384654;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 40vh;
+    height: fit-content;
+    padding-bottom: 20px;
 }
-.PC{
-    display: none;
-}
+
 .navbarPC{
     display: none;
 }
@@ -51,6 +50,8 @@ body{
 }
 
 .nav-mobile{
+    height: 40vw;
+    max-height: 200px;
     transition: 1s;
     max-width: 100%;
     z-index: 1;
@@ -63,7 +64,7 @@ body{
     color: #384654;
     background-color: #F56155;
     padding-top: 91px;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -168,12 +169,14 @@ body{
 }
 .case-slider p {
     width: 60vw;
-    height: 10vh;
+    height: 6vh;
+    max-height: 6vh;
     border-radius: 20px;
-    margin: 0px 15%;
+    margin: auto 15%;
     text-align: center;
     color: #fff;
-    padding-top: 65px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     max-width: 250px;
     
 }
@@ -193,7 +196,8 @@ body{
 .news{
     background-color: #384654;
     border-radius: 20px;
-    height: 30vh;
+    height: fit-content;
+    padding-bottom: 20px;
 }
 .news-a{
     text-align: center;
@@ -219,9 +223,8 @@ body{
    text-decoration: none;
 }
 .avis {
-    margin: auto;
-    margin-top: 20px;
-    height: 25vh;
+    margin: 20px auto;
+    height: fit-content;
     text-align: center;
     max-width: 390px;
     align-items: center;
@@ -249,7 +252,7 @@ body{
 }
 .border-right .fa-solid{
     color: #F56155;
-    margin-top: 13vh;
+    margin-top: 120px;
 }
 .border-right{
     position: relative;
@@ -307,10 +310,19 @@ body{
 .lienutile{
     display: none;
 }
+.PC{
+    display: none;
+}
+.avisB{
+    display: none;
+}
+.avisC{
+    display: none;
+}
 /* Fin footerMobile */
 
 /* Début écran pc */
-@media (min-width: 1050Px) {
+@media (min-width: 1150Px) {
     .PC{
         display: block;
     }
@@ -322,17 +334,19 @@ body{
         position: relative;
         margin: auto;
         display: flex;
-        height: 40px;
+        height: 20px;
         display: flex;
-        gap: 7vw;
+        gap: 8vw;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
     .navbar{
-        height: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 20px;
+        padding: 10px 20px;
         display: flex;
-        gap: 70px;
-       
+        gap: 70px; 
     }
     .navbar a {
         visibility: visible;
@@ -353,15 +367,16 @@ body{
         max-height: 30px;
     }
     .logopc{
-        height: 30px;
+        height: 20px;
     }
     .btn-devis{
         background-color: #F56155;
         border-radius: 20px;
-        width: 200px;
+        width: 150px;
         text-align: center;
-        height: 25px;
-        padding-top: 5px;
+        height: 20px;
+        padding: 2px;
+        box-shadow: 3px 5px 5px #212121;
     }
     .hamb-menu {
         visibility: hidden;
@@ -372,8 +387,9 @@ body{
         display: flex;
         margin: auto;
         justify-content: center;
-        gap: 20vw;
-        font-size: 1.5vw;
+        gap: 30vw;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
         padding-bottom: 20px;
     }
     .lienutile{
@@ -438,9 +454,10 @@ body{
         height: 50px;
         padding-top: 25px;
         margin: auto;
+        box-shadow: 3px 5px 5px #212121;
     }
     .p4x{
-        margin: 0 200px;
+        margin: 0 100px;
         padding: 50px 0px;
         height: fit-content;
         background-color: #384654;
@@ -463,11 +480,35 @@ body{
         background-color: #ffffff;
     }
     .formation-title{
-        margin: 30px;
+        margin: 30px; 
+    }
+    .formation span {
+        box-shadow: 3px 5px 5px #212121;
     }
     .formation a{
         text-align: center;
         color: white;
+        margin: auto;
+        
+    }
+    .slider-forfait{   
+    margin: auto;
+    justify-content:center ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    }
+    .case-slider{
+        max-width: 60vw;
+    }
+    .case-slider p{
+        margin: 0px;
+        height: 9vh;
+        padding-top: 70px;
+        padding-bottom: 0px;
+        max-height: 9vh;
     }
     .formation span {
     color: #fff;
@@ -480,7 +521,64 @@ body{
     padding-top: 25px;
     margin: auto;
     }
-    .news {
-        margin: 0 200px;
+    .news {   
+    margin: 0 100px;
+    padding: 50px 0px;
+    height: fit-content;
+    background-color: #384654;
+    border-radius: 20px;
     }
-}
+    .news h2 {
+    padding-top: 0px;
+    }
+    .news p{
+        text-align: center;
+        font-style: italic;
+        color: #ffffffdb;
+        font-size: 1.2rem;
+        max-width: 60vw;
+    }
+    .news-pc {
+        display: flex;
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+    }
+    .news span{
+        min-width: 200px;
+        background-color: #F56155;
+        text-align: center;
+        padding: 10px 0px;
+        margin-right: 20px;
+        border-radius: 10px;
+        max-height: 20px;
+        box-shadow: 3px 5px 5px #212121;
+    }
+    .news a{
+        color: #fff;
+    }
+   
+    .avis{
+        margin: 50px auto;
+        max-width: fit-content;  
+    }
+
+    .grid-avis {
+        justify-content: center;
+        width: 1150px;
+        display: grid;
+        margin-top: 40px;
+        margin-bottom: 100px;
+        grid-template-columns: 7fr 7fr 7fr;
+        scale: 1.2;
+    }
+    .avisC{
+        display: flex;
+    }
+    .avisB{
+        display: flex;
+    }
+    .border-right .fa-solid{
+        color: #F56155;
+        margin-top: 125px;
+    }
+}   

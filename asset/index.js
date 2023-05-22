@@ -6,12 +6,13 @@ basePosition = 0
 
 
   const slider = () => {  setTimeout(() =>{
-        if( basePosition < 1500)
+        if( basePosition < 1500 && screen.width <= 1150)
         {basePosition = basePosition +5
         sliderPosition.style.right = basePosition +"px"
         console.log(basePosition);}
-        else if (basePosition >= 1500){ 
+        else if (basePosition >= 1500 || screen.width > 1150){ 
             basePosition = 0
+            sliderPosition.style.right = basePosition +"px"
         }
 
     },100)}
@@ -25,3 +26,4 @@ basePosition = 0
     navMobile.style.left = "-100%"
  })
 
+console.log(screen.width);
