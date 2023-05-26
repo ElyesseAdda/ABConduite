@@ -51,7 +51,7 @@ body{
 
 .nav-mobile{
     height: 40vw;
-    max-height: 200px;
+    max-height: 127px;
     transition: 1s;
     max-width: 100%;
     z-index: 1;
@@ -188,7 +188,6 @@ body{
 .formation a{
     margin: auto;
     color: #F56155;
-    font-style: italic;
     text-decoration: none;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -236,10 +235,8 @@ body{
 }
 
 .borderavis{
-    /* margin-left: 16%; */
     margin-top: 20px;
-    display: flex;
-    
+    display: flex;   
 }
 .avis-text {
    position: absolute;
@@ -344,9 +341,13 @@ body{
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
         height: 20px;
-        padding: 10px 20px;
+        padding: 15px 20px;
         display: flex;
         gap: 70px; 
+    }
+    .logo-reseaupc:hover img {
+        transition: 0.30s;
+        scale: 1.2;
     }
     .navbar a {
         visibility: visible;
@@ -355,6 +356,7 @@ body{
         color: #E6E6E6; 
     }
      a:hover {
+        transition: 0.30s;
         color: #F56155;
     }
     .hamb-menu{
@@ -371,7 +373,7 @@ body{
     }
     .btn-devis{
         background-color: #F56155;
-        border-radius: 20px;
+        border-radius: 30px;
         width: 150px;
         text-align: center;
         height: 20px;
@@ -380,6 +382,7 @@ body{
     }
     .btn-devis:hover {
         box-shadow: 3px 5px 5px #212121;
+        color: #fff;
     }
     .hamb-menu {
         visibility: hidden;
@@ -401,6 +404,10 @@ body{
     .lienutile a{
         text-decoration: none;
         color: #E6E6E6;
+    }
+    .lienutile a:hover {
+        transition: 0.30s;
+        color: #F56155;
     }
     .logo-reseau{
         padding-top: 15px;
@@ -425,6 +432,7 @@ body{
         min-width: 380px;
     }
     .header-text{
+        min-height: 550px;
         padding-right: 20px;
         margin: auto;
         justify-content: center;
@@ -439,19 +447,20 @@ body{
         color: #1D2424;
         font-style: italic;
         padding-bottom: 30px;
-        font-size: 1.2rem;
+        font-size: 1.2vw;
         margin-bottom: 20px;
     }
     .logoAB{
         position: relative;
         height: 10vW; 
+        max-height: 150px;
     }
 
     .btn-contact{
         color: #fff;
         font-size: x-large;
         background-color: #F56155;
-        border-radius: 10px;
+        border-radius: 20px;
         width: 300px;
         text-align: center;
         height: 50px;
@@ -488,10 +497,20 @@ body{
     .formation-title{
         margin: 30px; 
     }
-    .formation span {
+   
+    .formation-title span {
+        color: #fff;
+        font-size: x-large;
+        background-color: #F56155;
+        border-radius: 20px;
+        width: 300px;
+        text-align: center;
+        height: 50px;
+        padding-top: 25px;
+        margin: auto;
         transition: 0.15;
-    }
-    .formation:hover span {
+        }
+    .formation-title:hover span {
         
         box-shadow: 3px 5px 5px #212121;
         
@@ -521,17 +540,7 @@ body{
         padding-bottom: 0px;
         max-height: 9vh;
     }
-    .formation span {
-    color: #fff;
-    font-size: x-large;
-    background-color: #F56155;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    height: 50px;
-    padding-top: 25px;
-    margin: auto;
-    }
+    
     .news {   
     margin: 0 100px;
     padding: 50px 0px;
@@ -554,17 +563,17 @@ body{
         grid-template-columns: 1fr 1fr ;
         align-items: center;
     }
-    .news span{
+    .btn-actu{
         min-width: 200px;
         background-color: #F56155;
         text-align: center;
         padding: 10px 0px;
         margin-right: 20px;
-        border-radius: 10px;
+        border-radius: 20px;
         max-height: 20px;
         transition: 0.15;
     }
-    .news:hover span {
+    .btn-actu:hover{
         box-shadow: 3px 5px 5px #212121;
     }  
     .news a{
@@ -578,11 +587,12 @@ body{
 
     .grid-avis {
         justify-content: center;
+        max-width: 1150px;
         width: 1150px;
         display: grid;
         margin-top: 40px;
         margin-bottom: 100px;
-        grid-template-columns: 7fr 7fr 7fr;
+        grid-template-columns: 1fr 1fr 1fr;
         scale: 1.05;
     }
     .avisC{
@@ -595,4 +605,6 @@ body{
         color: #F56155;
         margin-top: 125px;
     }
+
+
 }   
