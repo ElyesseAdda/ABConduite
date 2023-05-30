@@ -192,6 +192,26 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.nosFormation{
+    display: none;
+}
+.formation-PC {
+    display: none;
+}
+.codeFormation{
+    padding-top: 5px;
+    font-size: x-large;
+    letter-spacing: 7px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    margin-top: 0px;
+}
+.prix{
+    position: relative;
+    font-size: xx-large;
+    left: 83%;
+}
 .news{
     background-color: #384654;
     border-radius: 20px;
@@ -324,6 +344,7 @@ body{
 .prix {
     padding-left: 5vw;
     font-weight: 600;
+    left: 0px;
 }
 
 /* Début écran pc */
@@ -352,6 +373,7 @@ body{
         padding: 15px 20px;
         display: flex;
         gap: 70px; 
+        border-bottom: #fff solid 0.5px;
     }
     .logo-reseaupc:hover img {
         transition: 0.30s;
@@ -615,5 +637,67 @@ body{
     }
 
     /* Page formation */
-    
+    .nosFormation{
+        display: block;
+        background-color: #384654;
+        margin: auto;
+        height: 300px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        border-bottom: #F56155 solid 2px;
+
+    }
+    .nosFormation h1 {
+        margin-top: 0;
+        padding-top: 60px;
+        font-size: 48px;
+        margin-bottom: 5px;
+    }
+    .nosFormation p {
+        color: #FCFCFC;
+        font-size: 24px;
+    }
+    .formation-PC {
+        display: block;
+        background-color: #384654;
+        height: 250px;
+        color: #F56155;
+        padding-left: 50px;
+        /* padding-top: 1px; */
+        font-family: 'Gothic A1', sans-serif;
+        border-bottom:#F56155 solid 2px;
+    }
+    .formation-PC h2 {
+        font-size: 60px;
+        letter-spacing: 10px;
+        font-weight: 300;
+    }
+    .fa-plus{
+        position: relative;
+        font-size: 40px;
+        font-weight: 200;
+        border-radius: 10000px;
+        padding-left: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: #F56155 solid 2px;
+        bottom: 5px;
+        left: 50px;
+    }
+    .codeFormation{
+        display: block;
+        padding-top: 5px;
+        font-size: x-large;
+        letter-spacing: 7px;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 8px;
+        margin-top: 0px;
+    }
+    .prixPC{
+        position: relative;
+        font-size: xx-large;
+        left: 83%;
+    }
 }   
