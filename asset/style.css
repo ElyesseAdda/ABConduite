@@ -608,3 +608,33 @@ body{
 
 
 }   
+
+.card--article{
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+}
+
+.article--right{
+    width: 50%;
+    padding: 2em;
+}
+.article--left img {
+    width: 90%;
+    height: 90%;
+}
+
+.article--left{
+    width: 50%;
+    height: 70%;
+    padding: 2em;
+}
+
+.title{
+    margin: auto;
+    text-align: center;
+}
+
+.title>h1>span{
+    color: #F56155;
+}
