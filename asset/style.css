@@ -3,6 +3,7 @@ body{
     font-family: 'Inter', sans-serif; 
     background-color: #ffffff;
 }
+
 /* *{
     border: #F56155 solid 3px;
 } */
@@ -112,6 +113,30 @@ body{
 .header {
     display: none;
 }
+
+
+.card--article{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+
+.article--left img {
+    max-width: 300px;
+}
+
+.title{
+    margin: auto;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.title>h1>span{
+    color: #F56155;
+}
+
 /* Paiment 4x sans frais  */
 .p4x {
     background-color: #fff;
@@ -323,6 +348,11 @@ body{
     .PC{
         display: block;
     }
+
+    .lightgrey{
+        background-color: #F5F5F5;
+    }
+
     .mobile{
         display: none;
     }
@@ -522,13 +552,13 @@ body{
         
     }
     .slider-forfait{   
-    margin: auto;
-    justify-content:center ;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+        margin: auto;
+        justify-content:center ;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
     }
     .case-slider{
         max-width: 60vw;
@@ -542,14 +572,14 @@ body{
     }
     
     .news {   
-    margin: 0 100px;
-    padding: 50px 0px;
-    height: fit-content;
-    background-color: #384654;
-    border-radius: 20px;
+        margin: 0 100px;
+        padding: 50px 0px;
+        height: fit-content;
+        background-color: #384654;
+        border-radius: 20px;
     }
     .news h2 {
-    padding-top: 0px;
+        padding-top: 0px;
     }
     .news p{
         text-align: center;
@@ -606,35 +636,27 @@ body{
         margin-top: 125px;
     }
 
-
+    .card--article{
+        display: flex;
+        flex-direction: row;
+        height: 30%;
+        width: 90%;
+    }
+    
+    .article--right{
+        width: 50%;
+        padding: 2em;
+    }
+    .article--left img {
+        width: 90%;
+        height: 90%;
+        max-width: 500px;
+    }
+    
+    .article--left{
+        width: 50%;
+        height: 70%;
+        padding: 2em;
+    }
 }   
 
-.card--article{
-    display: flex;
-    flex-direction: row;
-    height: 30%;
-}
-
-.article--right{
-    width: 50%;
-    padding: 2em;
-}
-.article--left img {
-    width: 90%;
-    height: 90%;
-}
-
-.article--left{
-    width: 50%;
-    height: 70%;
-    padding: 2em;
-}
-
-.title{
-    margin: auto;
-    text-align: center;
-}
-
-.title>h1>span{
-    color: #F56155;
-}
