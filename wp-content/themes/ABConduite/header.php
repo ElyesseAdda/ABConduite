@@ -21,7 +21,7 @@
   <div class="navbar">
      <div class="navbarPC">
     <a href="#">Formation</a>
-    <a href="#">Actualités</a>
+    <a href="actualite.php">Actualités</a>
     <a href="#">Contact</a>
     <a class="logo-reseaupc"href="#"><img class="logopc" src="assets/img/logo/insta.png" alt=""></a>
     <a class="logo-reseaupc"href="#"><img class="logopc" src="assets/img/logo/tiktok.png" alt=""></a>
