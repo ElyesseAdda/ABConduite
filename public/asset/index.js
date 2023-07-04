@@ -9,7 +9,7 @@ basePosition = 0
         if( basePosition < 1500 && screen.width <= 1150)
         {basePosition = basePosition +5
         sliderPosition.style.right = basePosition +"px"
-        console.log(basePosition);}
+      }
         else if (basePosition >= 1500 || screen.width > 1150){ 
             basePosition = 0
             sliderPosition.style.right = basePosition +"px"
@@ -25,5 +25,3 @@ basePosition = 0
  crossMobileNav.addEventListener("click", () =>{
     navMobile.style.left = "-100%"
  })
-
-console.log(screen.width);
