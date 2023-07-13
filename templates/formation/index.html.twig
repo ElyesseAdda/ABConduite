@@ -9,139 +9,54 @@
             <p class="mobile">Grâce à nos offres que vous cherchiez à obtenir votre permis pour la fois ou que souhaiter améliorer vos compétence en matière de conduite.
             <br> Nous avons ce qu’il vous faut à vous de choisir.
             </p>
-      
+      {% for formation in formationList %}
             <div class="case-slider">
-              <p style="background-color: #F56155" >Code</p>
+              <p style="background-color: #F56155" >{{formation.title}}</p>
             </div>
             <div class="formation-text">
               <div class="forfait">
-                  <h2>Forfait <span class="orange">A</span></h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora eius dicta dignissimos cum fugiat magni delectus veritatis commodi soluta. <br>
-                  <div class="prix">999$<span class="orange">HT</span></p></div>
+                  <h2>Forfait <span class="orange">{{formation.initial}}</span></h2>
+                  <p>{{formation.description}} <br>
+                  <div class="prix">
+                  {% if formation.discount is defined %}
+                  <del>{{formation.price}}
+                  <span class="orange">HT</span></p></div>
+                  </del>
+                  <br>
+                  {{formation.discount}}<span class="orange">HT</span></p></div>
+                  {% else %}
+                  {{formation.price}}
+                  <span class="orange">HT</span></p></div>
+                  {% endif %}
               </div>
-            <div class="case-slider">
-              <p style="background-color: #424B54">Conduite</p>
             </div>
-            <div class="formation-text">
-              <div class="forfait">
-                  <h2>Forfait <span class="orange">B</span></h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora eius dicta dignissimos cum fugiat magni delectus veritatis commodi soluta. <br>
-                  <div class="prix">999$<span class="orange">HT</span></p></div>
-              </div>
-            <div class="case-slider">
-              <p style="background-color:#EBCFB2">Code + Conduite</p>
-            </div>
-            <div class="formation-text">
-              <div class="forfait">
-                  <h2>Forfait <span class="orange">C</span></h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora eius dicta dignissimos cum fugiat magni delectus veritatis commodi soluta. <br>
-                  <div class="prix">999$<span class="orange">HT</span></p></div>
-              </div>
-            <div class="case-slider">
-              <p style="background-color:#176087">Permis accompagnée</p>
-            </div>
-            <div class="formation-text">
-              <div class="forfait">
-                  <h2>Forfait <span class="orange">D</span></h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora eius dicta dignissimos cum fugiat magni delectus veritatis commodi soluta. <br>
-                  <div class="prix">999$<span class="orange">HT</span></p></div>
-              </div>
-            <div class="case-slider">
-              <p style="background-color:#86A59C">Permis accompagnée</p>
-            </div>
-            <div class="formation-text">
-              <div class="forfait">
-                  <h2>Forfait <span class="orange">E</span></h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora eius dicta dignissimos cum fugiat magni delectus veritatis commodi soluta. <br>
-                  <div class="prix">999$<span class="orange">HT</span></p></div>
-              </div>
-            <div class="case-slider">
-              <p style="background-color:#0A2239">Permis accompagnée</p>
-            </div>
-            <div class="formation-text">
-              <div class="forfait">
-                  <h2>Forfait <span class="orange">F</span></h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis tempora eius dicta dignissimos cum fugiat magni delectus veritatis commodi soluta. <br>
-                  <div class="prix">999$<span class="orange">HT</span></p></div>
-              </div>
-    </div>
-           </div>
+            {% endfor %}
 </div>
-</div>
-</div>
-</div>
-</div>
+
 <!-- -----------------Début PC------------------------ -->
 <div class="nosFormation">
   <h1>Nos <span class="orange">Formations</span></h1>
   <p>Choisissez parmis notre large panel de formations.
     <br>Découvrez nos offres plus bas.</p>
 </div>
+{% for formation in formationList %}
 <div class="formation-PC">
-  <h5 class="codeFormation">AB</h5>
-  <H2>CODE <i class="fa-solid fa-plus"></i></H2>
-  <h5 class="prixPC">999$ HT</h5>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem nihil culpa velit. Non quia nostrum totam beatae, veniam doloremque!</p>
+  <h5 class="codeFormation">{{formation.initial}}</h5>
+  <H2>{{formation.title}} <i class="fa-solid fa-plus"></i></H2>
+  {% if formation.discount is defined %}
+  <h5 class="prixPC"><del>{{formation.price}}</del> HT</h5>
+  <h5 class="prixPC">{{formation.discount}} HT</h5>
+  {% else %}
+  <h5 class="prixPC">{{formation.price}} HT </h5>
+  {% endif %}
+
+  <p>{{formation.description}}</p>
   <span class="orange">Cette formation comprend :</span>
-  <li>20h</li>
-  <li>Suivi complet</li>
-  <li>Livret de révision</li>
+ <p>{{formation.content}}</p>
   <button class="btn-formation">Choisir cette formation</button>
 </div>
-<div class="formation-PC">
-  <h5 class="codeFormation">BC</h5>
-  <H2>CODE + Conduite<i class="fa-solid fa-plus"></i></H2>
-  <h5 class="prixPC">999$ HT</h5>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem nihil culpa velit. Non quia nostrum totam beatae, veniam doloremque!</p>
-  <span class="orange">Cette formation comprend :</span>
-  <li>20h</li>
-  <li>Suivi complet</li>
-  <li>Livret de révision</li>
-  <button class="btn-formation">Choisir cette formation</button>
-</div>
-<div class="formation-PC">
-  <h5 class="codeFormation">B</h5>
-  <H2>Conduite<i class="fa-solid fa-plus"></i></H2>
-  <h5 class="prixPC">999$ HT</h5>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem nihil culpa velit. Non quia nostrum totam beatae, veniam doloremque!</p>
-  <span class="orange">Cette formation comprend :</span>
-  <li>20h</li>
-  <li>Suivi complet</li>
-  <li>Livret de révision</li>
-  <button class="btn-formation">Choisir cette formation</button>
-</div>
-<div class="formation-PC" style="height: fit-content;">
-  <h5 class="codeFormation">AC</h5>
-  <H2>Forfait accéléré<i class="fa-solid fa-plus"></i></H2>
-  <h5 class="prixPC">999$ HT</h5>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem nihil culpa velit. Non quia nostrum totam beatae, veniam doloremque!</p>
-  <span class="orange">Cette formation comprend :</span>
-  <li>20h</li>
-  <li>Suivi complet</li>
-  <li>Livret de révision</li>
-  <button class="btn-formation">Choisir cette formation</button>
-</div>
-<div class="formation-PC">
-  <h5 class="codeFormation">AP</h5>
-  <H2>Forfait apprentissage<i class="fa-solid fa-plus"></i></H2>
-  <h5 class="prixPC">999$ HT</h5>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem nihil culpa velit. Non quia nostrum totam beatae, veniam doloremque!</p>
-  <span class="orange">Cette formation comprend :</span>
-  <li>20h</li>
-  <li>Suivi complet</li>
-  <li>Livret de révision</li>
-  <button class="btn-formation">Choisir cette formation</button>
-</div>
-<div class="formation-PC">
-  <h5 class="codeFormation">AAC</h5>
-  <H2>Conduite supervisée<i class="fa-solid fa-plus"></i></H2>
-  <h5 class="prixPC">999$ HT</h5>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptatem nihil culpa velit. Non quia nostrum totam beatae, veniam doloremque!</p>
-  <span class="orange">Cette formation comprend :</span>
-  <li>20h</li>
-  <li>Suivi complet</li>
-  <li>Livret de révision</li>
-  <button class="btn-formation">Choisir cette formation</button>
-</div>
+
+{% endfor %}
+
 </div>
 {% endblock %}
